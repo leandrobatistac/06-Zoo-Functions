@@ -6,8 +6,8 @@ function getEmployeeByName(employeeName) {
   const primeiroNome = data.employees.find((element) => employeeName.includes(element.firstName));
   const ultimoNome = data.employees.find((element) => employeeName.includes(element.lastName));
 
-  if (primeiroNome === undefined) { return ultimoNome; }
-  if (ultimoNome === undefined) { return primeiroNome; }
+  if (primeiroNome !== undefined) { return primeiroNome; }
+  if (ultimoNome !== undefined) { return ultimoNome; }
 }
 
 module.exports = getEmployeeByName;
