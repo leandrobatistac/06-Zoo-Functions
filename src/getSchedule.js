@@ -28,7 +28,7 @@ function parametroDia(scheduleTarget) {
 // Função caso o parâmetro seja Undefined
 function parametroUndefined() {
   const result = {};
-  mainDias.map((element) => {
+  mainDias.forEach((element) => {
     result[element] = {
       exhibition:
         data.hours[element].open === 0
