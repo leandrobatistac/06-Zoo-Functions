@@ -23,5 +23,5 @@ function countAnimals(animal) {
   return contador;
 }
 
-// console.log(countAnimals());
-module.exports = countAnimals;
+console.log(countAnimals());
+// module.exports = countAnimals;
